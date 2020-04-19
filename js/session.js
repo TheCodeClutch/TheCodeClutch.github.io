@@ -13,7 +13,7 @@ function getToken(currToken) {
 	Promise.all(
 		[networkPromise, timeOutPromise]).then(function (values) {
 			console.log("Atleast 2 secs + TTL (Network/server)");
-			values.then(data => {
+			values[0].then(data => {
 				return data.json();
 			})
 			.then( data => {
