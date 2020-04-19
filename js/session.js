@@ -13,7 +13,9 @@ function getToken(currToken) {
 	Promise.all(
 		[networkPromise, timeOutPromise]).then(function (values) {
 			console.log("Atleast 2 secs + TTL (Network/server)");
-			getToken(localStorage.setItem('TCC_SID', values.token));
+			console.log(values);
+			localStorage.setItem('TCC_SID', values.token)
+			getToken(localStorage.getItem('TCC_SID'));
 		});
 }
 console.log('Hello')
