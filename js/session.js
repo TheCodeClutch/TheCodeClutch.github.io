@@ -10,7 +10,8 @@ function getToken(currToken) {
 		return data.json()
 	})
 	.then( val => {
-		localStorage.setItem('TCC_SID', data.token)
+		console.log(val)
+		localStorage.setItem('TCC_SID', val.token)
 	})
 	.catch( err => {
 		console.log(err)
