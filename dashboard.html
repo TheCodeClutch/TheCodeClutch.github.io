@@ -6,5 +6,23 @@
 </head>
 <body>
 	This is the dashboard of TCC
+
+	<div id="user-name"></div>
+	<div id="user-email"></div>
+	<img src="" id="user-pic" style="height : 200px; width : 200px; border-radius : 50%">
+
+
+	<script>
+		let url_string = window.location.href;
+		let url = new URL(url_string);
+		let name = url.searchParams.get("name");
+		let email = url.searchParams.get("email");
+		let sessionID = url.searchParams.get("sessionID");
+		let image = url.searchParams.get("image");
+		sessionStorage.setItem('TCC_SID', sessionID);
+		document.getElementById('user-name').innerHTML = name;
+		document.getElementById('user-email').innerHTML = email;
+		document.getElementById('user-pic').setAttribute('src', image;
+	</script>
 </body>
 </html>

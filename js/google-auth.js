@@ -1,4 +1,4 @@
-fetch('http://localhost:3000/auth/getGoogleAuthUrl')
+fetch('https://thecodeclutch.herokuapp.com/auth/getGoogleAuthUrl')
 .then( res => {
 	return res.json();
 })
