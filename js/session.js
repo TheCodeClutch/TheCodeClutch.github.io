@@ -16,5 +16,5 @@ function getToken(currToken) {
 			getToken(localStorage.setItem('TCC_SID', values.token));
 		});
 }
-
+console.log('Hello')
 getToken(localStorage.getItem('TCC_SID'))
