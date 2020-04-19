@@ -10,13 +10,12 @@ function getToken(currToken) {
 		return data.json()
 	})
 	.then( val => {
-		console.log(val)
 		localStorage.setItem('TCC_SID', val.token)
 	})
 	.catch( err => {
-		console.log(err)
+		// Token refresh error
 	})
 }
 window.setInterval(function(){
   getToken(localStorage.getItem('TCC_SID'))
-}, 10000);
+}, 720000);
