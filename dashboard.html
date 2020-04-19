@@ -19,7 +19,7 @@
 		let email = url.searchParams.get("email");
 		let sessionID = url.searchParams.get("sessionID");
 		let image = url.searchParams.get("image");
-		sessionStorage.setItem('TCC_SID', sessionID);
+		localStorage.setItem('TCC_SID', sessionID);
 		document.getElementById('user-name').innerHTML = name;
 		document.getElementById('user-email').innerHTML = email;
 		document.getElementById('user-pic').setAttribute('src', image);
