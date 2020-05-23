@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!--Google fonts  -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -20,14 +20,15 @@
 </head>
 
 <body>
-    <div class="upper-rect" style="background-color:#0099ff; height:250px; width:100%;"></div>
-    <div class="container-fluid">
+    <div style="height: 100vh;">
+    <div class="upper-rect" style="background-color:#0099ff; height:25vh; width:100%;"></div>
+    <div class="container-fluid" style="height: 50vh; display: flex; justify-content: center; flex-direction: column;">
         <div class="row">
             <div class="col-12 col-lg-2"></div>
             <div class="col-12 col-lg-8">
                 <div class="row">
                     <div class="col-6">
-                        <h1><strong>TheCodeClutch</strong></h1>
+                        <h1 style="font-size: 2.1em;"><strong>TheCodeClutch</strong></h1>
                         <p class="tcc-team">
                             We are a team of developers who strive to give users the best experience with our products.
                         </p>
@@ -45,13 +46,14 @@
             <div class="col-12 col-lg-2"></div>
         </div>
     </div>
-    <div class="lower-rect" style="background-color:#0099ff; height:250px; width:100%;"></div>
+    <div class="lower-rect" style="background-color:#0099ff; height:25vh; width:100%;"></div>
 
-    <a href="#nav-bar" style="text-decoration: none;">
+    <!-- <a href="#nav-bar" style="text-decoration: none;">
         <div class="col-12" style="text-align: center; margin-top:30px;">
             Scroll Down
         </div>
-    </a>
+    </a> -->
+    </div>
 
 
     <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light" id="nav-bar">
@@ -75,17 +77,17 @@
 
     <div class="container-fluid">
         <div class="row" id="about-us">
-            <div class="col-12 col-lg-3"></div>
-            <div class="col-12 col-lg-6" style="margin-top:50px; text-align: center;">
+            <div class="col-1 col-lg-2"></div>
+            <div class="col-10 col-lg-8" style="margin-top:50px; text-align: center;">
                 <h2>About Us</h2>
-                <p style="margin-top: 50px; font-size: 20px;">
+                <p style="margin-top: 50px; font-size: 20px; text-align: justify; text-align-last: center;">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                     laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                     voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
                     non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-                <div class="col-12 col-lg-3"></div>
+                <div class="col-1 col-lg-2"></div>
             </div>
         </div>
 
@@ -106,9 +108,9 @@
                                     of cases and guidelines by WHO. It also has a help station to post help requests.
                                 </p>
                             </div>
-                            <div class="col-4 proj-img">
+                            <div class="col-4 proj-img" style="display: flex; flex-direction: column; justify-content: center;">
                                 <img src="./assets/covid-logo.PNG" alt="COVID-19" class="img-fluid"
-                                    style="max-width : 100%; padding-top:10px;">
+                                    style="max-width : 100%;">
                             </div>
                             <div class="col-12 proj-link-1">
                                 <a target="_blank" rel="noreferrer" href="https://www.coviddesk.in/"
